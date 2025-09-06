@@ -21,7 +21,10 @@ function CityItem({ city }: { city: City }) {
   const router = useRouter();
 
   function handlePressCity() {
-    router.push({ pathname: "/cities/[name]", params: { name: city.city } });
+    router.push({
+      pathname: "/cities/[name]",
+      params: { name: city.city_name },
+    });
   }
 
   return (

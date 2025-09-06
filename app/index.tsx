@@ -16,7 +16,7 @@ export default function Home() {
 
       <TouchableOpacity
         style={styles.button}
-        onPress={() => router.push("/cities/index")}
+        onPress={() => router.push("/cities")}
       >
         <Text style={styles.buttonText}>Entrar</Text>
 
